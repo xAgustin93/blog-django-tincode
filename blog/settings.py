@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '7yx!c*51t%v(i1*szc$a(hjiw4wp3=rtv7nf7b_3r(t5q20*v9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['blog-django-udemy.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -130,7 +130,6 @@ REST_FRAMEWORK = {
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = './static/'
-STATIC_ROOT = BASE_DIR.joinpath('static/')
+STATIC_ROOT = './static/'
 
 AUTH_USER_MODEL = 'users.User'
